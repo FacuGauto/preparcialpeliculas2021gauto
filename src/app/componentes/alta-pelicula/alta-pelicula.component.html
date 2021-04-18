@@ -1,0 +1,23 @@
+<h2>Alta pelicula</h2>
+<div *ngIf="peliculaNueva">
+    <div>
+        <label>Nombre</label>
+        <input type="text" [(ngModel)]="peliculaNueva.nombre">
+    </div>
+    <div>
+        <label>Tipo</label>
+        <input type="text" [(ngModel)]="peliculaNueva.tipo">
+    </div>
+    <div>
+        <label>Fecha de estreno</label>
+        <input type="text" [(ngModel)]="peliculaNueva.fechadeestreno">
+    </div>
+    <button class="btn btn-secondary" (click)="guardarNuevaPelicula()">
+        Crear
+    </button>
+</div>
+<div *ngIf="!peliculaNueva">
+    <button class="btn btn-secondary" (click)="hacerNuevaPelicula()">
+        Nueva Pelicula
+    </button>
+</div>
