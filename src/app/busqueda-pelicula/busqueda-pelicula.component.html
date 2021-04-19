@@ -17,7 +17,7 @@
   </nav>
   
   <main role="main">
-   <app-tabla-pelicula (peliculaSeleccionadaEvento)="cargarPeliculaSeleccionada($event)" [peliculas]="listadoDePeliculas"></app-tabla-pelicula>
+   <app-tabla-pelicula (peliculaAEliminarEvento)="eliminarPelicula($event)" (peliculaSeleccionadaEvento)="cargarPeliculaSeleccionada($event)" [peliculas]="listadoDePeliculas"></app-tabla-pelicula>
     <div class="container">
       <div class="row">
         <div class="col-md-4">

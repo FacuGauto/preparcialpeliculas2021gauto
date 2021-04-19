@@ -2,15 +2,15 @@
 <div *ngIf="peliculaNueva">
     <div>
         <label>Nombre</label>
-        <input type="text" [(ngModel)]="peliculaNueva.nombre">
+        <input type="text" class="form-control" [(ngModel)]="peliculaNueva.nombre" placeholder="Ingrese nombre">
     </div>
     <div>
         <label>Tipo</label>
-        <input type="text" [(ngModel)]="peliculaNueva.tipo">
+        <input type="text" class="form-control" [(ngModel)]="peliculaNueva.tipo" placeholder="Ingrese tipo">
     </div>
     <div>
         <label>Fecha de estreno</label>
-        <input type="text" [(ngModel)]="peliculaNueva.fechadeestreno">
+        <input type="text" class="form-control" [(ngModel)]="peliculaNueva.fechadeestreno" placeholder="Ingrese fecha de estreno">
     </div>
     <button class="btn btn-secondary" (click)="guardarNuevaPelicula()">
         Crear

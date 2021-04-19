@@ -10,6 +10,7 @@ export class TablaPeliculaComponent implements OnInit {
 
   @Input('peliculas') listadoDePeliculas: Pelicula[];
   @Output() peliculaSeleccionadaEvento: EventEmitter<any> = new EventEmitter<any>();
+  @Output() peliculaAEliminarEvento: EventEmitter<any> = new EventEmitter<any>();
 
   constructor() {}
 
@@ -19,6 +20,10 @@ export class TablaPeliculaComponent implements OnInit {
   seleccioneUnaPelicula(pelicula: Pelicula){
     console.info(pelicula);
     this.peliculaSeleccionadaEvento.emit(pelicula);
+  }
+
+  eliminarUnaPelicula(pelicula: Pelicula){
+    this.peliculaAEliminarEvento.emit(pelicula);
   }
 
 }

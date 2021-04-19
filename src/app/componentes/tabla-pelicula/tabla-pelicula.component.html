@@ -1,11 +1,13 @@
- <!-- Main jumbotron for a primary marketing message or call to action -->
  <div class="jumbotron">
     <div class="container">
-      <ul>
+      <h2>Listado peliculas</h2>
+      <ul class="grid">
           <li *ngFor="let pelicula of listadoDePeliculas">
               <span>{{pelicula.nombre}}</span>
-              <!--<button class="btn btn-primary" (click)="seleccioneUnaPelicula(pelicula)">+</button>-->
-              <p><a class="btn btn-secondary" (click)="seleccioneUnaPelicula(pelicula)">View details &raquo;</a></p>
+              <p>
+                <button class="btn btn-primary" (click)="seleccioneUnaPelicula(pelicula)">Ver detalles</button>
+                <button class="btn btn-danger" (click)="eliminarUnaPelicula(pelicula)">Eliminar</button>
+              </p>
           </li>
       </ul>
     </div>

@@ -31,4 +31,8 @@ export class BusquedaPeliculaComponent implements OnInit {
     this.listadoDePeliculas.push(pelicula);
   }
 
+  eliminarPelicula(pelicula: Pelicula){
+    this.listadoDePeliculas.splice(this.listadoDePeliculas.indexOf(pelicula),1);
+  }
+
 }
