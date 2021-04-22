@@ -4,9 +4,9 @@ import { BienvenidoComponent } from './bienvenido/bienvenido.component';
 import { BusquedaPeliculaComponent } from './busqueda-pelicula/busqueda-pelicula.component';
 
 const routes: Routes = [
-  {path:'', pathMatch: 'full', redirectTo: '/home'},
-  {path:'home', component: BusquedaPeliculaComponent},
-  {path:'bienvenidos', component: BienvenidoComponent},
+  {path:'', pathMatch: 'full', redirectTo: '/busqueda'},
+  {path:'busquedapeliculas', component: BusquedaPeliculaComponent},
+  {path:'bienvenido', component: BienvenidoComponent},
   {path:'**', component: BusquedaPeliculaComponent}
 ];
 
